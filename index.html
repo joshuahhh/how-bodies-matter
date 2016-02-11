@@ -76,6 +76,10 @@
         color: #4A4A4A;
       }
 
+      h2 {
+        color: inherit;
+      }
+
       .authors {
         font-family: Avenir Next;
         color: #4A4A4A;
@@ -139,20 +143,31 @@
         overflow: auto;
         margin-bottom: 200px;
         width: 100%;
+        position: relative;
+
       }
 
       .chapter-heading {
         float: left;
         width: 450px;
         text-align: right;
-        margin-right: 55px;
-        background-color: lightgray;
+        padding: 30px;
+        background-color: #4A4A4A;
+        color: white;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+      }
+
+      .chapter-contents {
+        margin-left: 550px;
       }
 
       .quote, .quote-source {
         font-family: Palatino;
         font-size: 14pt;
-        color: #4A4A4A;
+        /*color: #4A4A4A;*/
         line-height: 19pt;
         width: 360px;
         float: right;
@@ -281,79 +296,81 @@ and computational worlds.
       George Lakoff and Mark Johnson [38]
     </div>
   </div>
-  <div class='section'>
-    <div class='text'>
-      Direct physical interaction with the world is a key constituting factor of
-cognitive development during childhood. The importance of physical action as an
-active component of our cognition extends beyond early developmental stages.
-This section reviews the connection between thinking and doing as uncovered by
-educational theorists, gesture researchers, and cognitive scientists.
-Cumulatively, their empirical work point towards a common nexus of perception,
-cognition, and action. Unlike theories of information processing and human
-cognition that focus primarily on thought as something that only happens in the
-head, theories and research of <span class='emph'>embodied</span> cognition regard bodily activity as
-being essential to understanding human cognition [54]. These theories have
-important implications for designing interactive systems.
-    </div>
-  </div>
-  <div class='section'>
-    <h3>Learning through doing</h3>
-    <div class='text'>
-      <p>Being able to move around in the world and interact with pieces of the world enables learning in ways that reading books and listening to words do not. Jean Piaget [55] posited that cognitive structuring requires both physical and mental activity. Particularly for infants in the sensorimotor stage of development, <span class='emph'>physical interaction in the world facilitates cognitive development</span>. For example, locomotor experience increases spatial cognitive abilities in infants, such as understanding the concept of object permanence (<span class='italic'>i.e.</span>, that objects continue to exist even when they are not visible) [33]. In this very basic sense, humans learn about the world and its properties by interacting within it.</p>
-      <p>Pedagogies such as the Montessori method [48] employ bodily engagement with physical objects to facilitate active learning (see Figure 1). The use of tangible manipulatives has been shown to improve elementary school student understanding of mathematical concepts. Such educational methods nicely leverage the bodily basis of mathematical concepts for learning [39]. Physical reasoning can also play an important role in professional and higher education. An example is MIT’s Illuminating Light interface [69], which enables users to combine rapid creation of light reflection simulations by moving tangible objects on a tabletop surface (see Figure 2).</p>
-    </div>
-    <div class='figure' style='margin-right: -175px'>
-      <img src='fig1.png' width='100%'/>
-      <div class='caption'>
-        <span class='caption-title'>Figure 1</span>
-        With Montessori blocks, concepts such as distinct numbers are represented through distinct physical sizes, shapes, and colors.
+  <div class='chapter-contents'>
+    <div class='section'>
+      <div class='text'>
+        Direct physical interaction with the world is a key constituting factor of
+  cognitive development during childhood. The importance of physical action as an
+  active component of our cognition extends beyond early developmental stages.
+  This section reviews the connection between thinking and doing as uncovered by
+  educational theorists, gesture researchers, and cognitive scientists.
+  Cumulatively, their empirical work point towards a common nexus of perception,
+  cognition, and action. Unlike theories of information processing and human
+  cognition that focus primarily on thought as something that only happens in the
+  head, theories and research of <span class='emph'>embodied</span> cognition regard bodily activity as
+  being essential to understanding human cognition [54]. These theories have
+  important implications for designing interactive systems.
       </div>
     </div>
-  </div>
-  <div class='section'>
-    <h3>The Role of Gesture</h3>
-    <div class='text'>
-      <p>Just as moving about in the world helps infants to learn about the physics of the world and consequences of actions, gesture plays a role in pre-linguistic communication for babies [31] as well as aids cognition and fully linguistic communication for adults. From studies of gesturing in face-to-face interactions, we know that people use gesture to conceptually plan speech production [2] and to communicate thoughts that are not easily verbalized [12].</p>
-      <p>While gesturing is normally thought of as having a purely communicative function, many studies suggest that gesture also plays a helpful role for the speaker: gesturing has been shown to lighten cognitive load for both adults and children [22]; even congenitally blind children gesture [32]. A less obvious point is that systems that constrain gestural abilities (<span class='italic'>e.g.</span>, having your hands stuck on a keyboard) are likely to hinder the user’s thinking and communication. Consider telephones: we have seen shifts from corded phones to cordless phones to mobile phones and mobile phone head-sets. Experimental studies demonstrated that more physical mobility increased user creativity and disclosure of personal information in microphone use [70]. These results suggest that less constraining interaction styles are likely to help users think and communicate.</p>
-    </div>
-  </div>
-  <div class='section'>
-    <h3>Epistemic Action</h3>
-    <div class='text'>
-      <p>Body engagement with physical and virtual environments constitutes another important aspect of cognitive work. We are familiar with people leaving keys or notes for them-selves in strategic locations to serve as later reminders.</p>
-      <p>Distinguishing <span class='emph'>pragmatic</span> action—manipulating artifacts to directly accomplish a task—from <span class='emph'>epistemic</span> action—manipulating artifacts to better understand the task’s context [34]—provides interpretation for such behavior. One might expect that the predominant task in Tetris is piece movement with the <span class='emph'>pragmatic</span> effect of aligning the piece with the optimal available space. However, contrary to intuitions, the proportion of shape rotations later undone by backtracking increases (not decreases) with increasing Tetris-playing skill levels: <span class='emph'>players manipulate pieces to understand how different options would work</span> [42].</p>
-      <p>These epistemic actions are one of many helpful ways in which a user’s environment may be appropriated to facilitate mental work [26, 51]. Analogous examples include moving lettered tiles into various arrangements for playing Scrabble [43] and using external representations for numeric tasks [78].</p>
-    </div>
-    <div class='figure' style='margin-top: 30px; margin-left: -175px'>
-      <!-- Learning through doing -->
-      <img src='fig2.png' width='100%'/>
-      <div class='caption'>
-        <span class='caption-title'>Figure 2</span>
-        The tangible Illuminating Light workbench lets students learn about optical systems by designing them.
+    <div class='section'>
+      <h3>Learning through doing</h3>
+      <div class='text'>
+        <p>Being able to move around in the world and interact with pieces of the world enables learning in ways that reading books and listening to words do not. Jean Piaget [55] posited that cognitive structuring requires both physical and mental activity. Particularly for infants in the sensorimotor stage of development, <span class='emph'>physical interaction in the world facilitates cognitive development</span>. For example, locomotor experience increases spatial cognitive abilities in infants, such as understanding the concept of object permanence (<span class='italic'>i.e.</span>, that objects continue to exist even when they are not visible) [33]. In this very basic sense, humans learn about the world and its properties by interacting within it.</p>
+        <p>Pedagogies such as the Montessori method [48] employ bodily engagement with physical objects to facilitate active learning (see Figure 1). The use of tangible manipulatives has been shown to improve elementary school student understanding of mathematical concepts. Such educational methods nicely leverage the bodily basis of mathematical concepts for learning [39]. Physical reasoning can also play an important role in professional and higher education. An example is MIT’s Illuminating Light interface [69], which enables users to combine rapid creation of light reflection simulations by moving tangible objects on a tabletop surface (see Figure 2).</p>
+      </div>
+      <div class='figure' style='margin-right: -175px'>
+        <img src='fig1.png' width='100%'/>
+        <div class='caption'>
+          <span class='caption-title'>Figure 1</span>
+          With Montessori blocks, concepts such as distinct numbers are represented through distinct physical sizes, shapes, and colors.
+        </div>
       </div>
     </div>
-  </div>
-  <div class='section'>
-    <h3>Thinking through prototyping</h3>
-    <div class='text'>
-      <p>Iterative design practices provide another perspective on the importance of concrete, artifact-centered action in the world to aid thought. <span class='emph'>Reflective practice</span>, the framing and evaluation of a design challenge by <span class='emph'>working it through</span>, rather than just <span class='emph'>thinking it through</span>, points out that physical action and cognition are interconnected [58]. Successful product designs result from a series of “conversations with materials.” Here, the “conversations” are interactions between the designer and the design medium — sketching on paper, shaping clay, building with foam core [59] (see Figure 3). The epistemic production of concrete prototypes provides the crucial element of surprise, unexpected realizations that the designer could not have arrived at without producing a concrete manifestation of her ideas.</p>
-      <p>The <span class='emph'>backtalk</span> that artifacts provide helps uncover problems or generate suggestions for new designs. Prototypes thus become the “essential medium for information, interaction, integration, and collaboration” [60]. Beyond backtalk, creating intermediate tangible artifacts allows for expression of tacit knowledge. It also facilitates communication within a design team, with clients, or users, by providing a concrete anchor around which discussion can occur. Prototypes then present us with a different kind of embodiment: they themselves embody design ideas or specifications, render them concrete and, in doing so, inform the de-signer’s thinking (see Figure 3).</p>
-      <p>Our own fieldwork with design professionals underscores the centrality of thinking through prototyping. One architect estimated the number of tangible prototypes made for a building to be between 200 and 300 in his own practice. A design director stressed the importance of generating a wide range of different tangible and virtual prototypes. Because different styles and fidelities of artifacts yield different perspectives, externalizing ideas through a variety of prototypes affords a richer understanding of a design.</p>
-      <p>As a counterpoint, Schrage [60] cautions us against placing too much emphasis on the physicality of prototypes. In his view, the reliance of Detroit car manufacturers on high-fidelity clay models was a factor in their loss of market share to foreign firms who used more rapid software prototyping strategies. Thus concrete tangibility is no panacea, but an important ingredient of a successful prototyping practice.</p>
+    <div class='section'>
+      <h3>The Role of Gesture</h3>
+      <div class='text'>
+        <p>Just as moving about in the world helps infants to learn about the physics of the world and consequences of actions, gesture plays a role in pre-linguistic communication for babies [31] as well as aids cognition and fully linguistic communication for adults. From studies of gesturing in face-to-face interactions, we know that people use gesture to conceptually plan speech production [2] and to communicate thoughts that are not easily verbalized [12].</p>
+        <p>While gesturing is normally thought of as having a purely communicative function, many studies suggest that gesture also plays a helpful role for the speaker: gesturing has been shown to lighten cognitive load for both adults and children [22]; even congenitally blind children gesture [32]. A less obvious point is that systems that constrain gestural abilities (<span class='italic'>e.g.</span>, having your hands stuck on a keyboard) are likely to hinder the user’s thinking and communication. Consider telephones: we have seen shifts from corded phones to cordless phones to mobile phones and mobile phone head-sets. Experimental studies demonstrated that more physical mobility increased user creativity and disclosure of personal information in microphone use [70]. These results suggest that less constraining interaction styles are likely to help users think and communicate.</p>
+      </div>
     </div>
-  </div>
-  <div class='section'>
-    <h3>On Representation</h3>
-    <div class='text'>
-      <p>The representation of a task can radically affect our reason-ing abilities and performance. For example, the game of tic-tac-toe (opposing players mark X’s and O’s in a 3 × 3 grid) can be equivalently represented as a game of drawing numbered cards with the goal of selecting three that sum to 15 [51, 64]. From a computational perspective, these two problems are isomorphic. However, the tic-tac-toe representation is significantly easier to work with because the <span class='emph'>representational form of the problem makes visible the most relevant constraints implicit in the problem</span>. As Simon writes, in mathematics, “solving a problem simply means representing a problem so as to make the solution transparent” [64, p. 153].</p>
-      <p>Tangibility offers both direct familiarity and a set of common metaphors to leverage in interaction. But some map-pings between the physical and the virtual <span class='emph'>work</span>, while others do not. An example of an interactive system that successfully leverages our familiarity with everyday physics is the automotive drive-by-wire system that uses force feedback to alter driver perceptions of the road [68]. It discourages lane drifting by exerting forces on the wheel such that the driver has the impression that the driving lane is shaped like a shallow bathtub.</p>
-      <p>Perhaps the most common stated purpose of tangibility is that these interfaces provide “natural” mappings [14] and leverage our familiarity with the real world [15], <span class='italic'>e.g.</span>, virtual objects are positioned in virtual space by moving physical handles in physical space. These identifications are only possible for a restricted domain of systems so how does one interact with symbolic information that does not have an obvious physical equivalent? In a data- or technology-centric view of tangible interaction, the question of representation is equivalent to deciding on a reification strategy that turns bits into atoms. A <span class='emph'>body-centered</span> view looks at how the actions that we perform with a system contribute to task transparency.</p>
+    <div class='section'>
+      <h3>Epistemic Action</h3>
+      <div class='text'>
+        <p>Body engagement with physical and virtual environments constitutes another important aspect of cognitive work. We are familiar with people leaving keys or notes for them-selves in strategic locations to serve as later reminders.</p>
+        <p>Distinguishing <span class='emph'>pragmatic</span> action—manipulating artifacts to directly accomplish a task—from <span class='emph'>epistemic</span> action—manipulating artifacts to better understand the task’s context [34]—provides interpretation for such behavior. One might expect that the predominant task in Tetris is piece movement with the <span class='emph'>pragmatic</span> effect of aligning the piece with the optimal available space. However, contrary to intuitions, the proportion of shape rotations later undone by backtracking increases (not decreases) with increasing Tetris-playing skill levels: <span class='emph'>players manipulate pieces to understand how different options would work</span> [42].</p>
+        <p>These epistemic actions are one of many helpful ways in which a user’s environment may be appropriated to facilitate mental work [26, 51]. Analogous examples include moving lettered tiles into various arrangements for playing Scrabble [43] and using external representations for numeric tasks [78].</p>
+      </div>
+      <div class='figure' style='margin-top: 30px; margin-left: -175px'>
+        <!-- Learning through doing -->
+        <img src='fig2.png' width='100%'/>
+        <div class='caption'>
+          <span class='caption-title'>Figure 2</span>
+          The tangible Illuminating Light workbench lets students learn about optical systems by designing them.
+        </div>
+      </div>
     </div>
-    <div class='figure'>
-      <img src='fig3.png' width='100%'/>
-      <div class='caption'>
-        <span class='caption-title'>Figure 3</span>
-        A paper sketch, physical mock-up, and final prototype, showing how the interface of SnuzieQ, an alarm clock, evolved through prototyping.
+    <div class='section'>
+      <h3>Thinking through prototyping</h3>
+      <div class='text'>
+        <p>Iterative design practices provide another perspective on the importance of concrete, artifact-centered action in the world to aid thought. <span class='emph'>Reflective practice</span>, the framing and evaluation of a design challenge by <span class='emph'>working it through</span>, rather than just <span class='emph'>thinking it through</span>, points out that physical action and cognition are interconnected [58]. Successful product designs result from a series of “conversations with materials.” Here, the “conversations” are interactions between the designer and the design medium — sketching on paper, shaping clay, building with foam core [59] (see Figure 3). The epistemic production of concrete prototypes provides the crucial element of surprise, unexpected realizations that the designer could not have arrived at without producing a concrete manifestation of her ideas.</p>
+        <p>The <span class='emph'>backtalk</span> that artifacts provide helps uncover problems or generate suggestions for new designs. Prototypes thus become the “essential medium for information, interaction, integration, and collaboration” [60]. Beyond backtalk, creating intermediate tangible artifacts allows for expression of tacit knowledge. It also facilitates communication within a design team, with clients, or users, by providing a concrete anchor around which discussion can occur. Prototypes then present us with a different kind of embodiment: they themselves embody design ideas or specifications, render them concrete and, in doing so, inform the de-signer’s thinking (see Figure 3).</p>
+        <p>Our own fieldwork with design professionals underscores the centrality of thinking through prototyping. One architect estimated the number of tangible prototypes made for a building to be between 200 and 300 in his own practice. A design director stressed the importance of generating a wide range of different tangible and virtual prototypes. Because different styles and fidelities of artifacts yield different perspectives, externalizing ideas through a variety of prototypes affords a richer understanding of a design.</p>
+        <p>As a counterpoint, Schrage [60] cautions us against placing too much emphasis on the physicality of prototypes. In his view, the reliance of Detroit car manufacturers on high-fidelity clay models was a factor in their loss of market share to foreign firms who used more rapid software prototyping strategies. Thus concrete tangibility is no panacea, but an important ingredient of a successful prototyping practice.</p>
+      </div>
+    </div>
+    <div class='section'>
+      <h3>On Representation</h3>
+      <div class='text'>
+        <p>The representation of a task can radically affect our reason-ing abilities and performance. For example, the game of tic-tac-toe (opposing players mark X’s and O’s in a 3 × 3 grid) can be equivalently represented as a game of drawing numbered cards with the goal of selecting three that sum to 15 [51, 64]. From a computational perspective, these two problems are isomorphic. However, the tic-tac-toe representation is significantly easier to work with because the <span class='emph'>representational form of the problem makes visible the most relevant constraints implicit in the problem</span>. As Simon writes, in mathematics, “solving a problem simply means representing a problem so as to make the solution transparent” [64, p. 153].</p>
+        <p>Tangibility offers both direct familiarity and a set of common metaphors to leverage in interaction. But some map-pings between the physical and the virtual <span class='emph'>work</span>, while others do not. An example of an interactive system that successfully leverages our familiarity with everyday physics is the automotive drive-by-wire system that uses force feedback to alter driver perceptions of the road [68]. It discourages lane drifting by exerting forces on the wheel such that the driver has the impression that the driving lane is shaped like a shallow bathtub.</p>
+        <p>Perhaps the most common stated purpose of tangibility is that these interfaces provide “natural” mappings [14] and leverage our familiarity with the real world [15], <span class='italic'>e.g.</span>, virtual objects are positioned in virtual space by moving physical handles in physical space. These identifications are only possible for a restricted domain of systems so how does one interact with symbolic information that does not have an obvious physical equivalent? In a data- or technology-centric view of tangible interaction, the question of representation is equivalent to deciding on a reification strategy that turns bits into atoms. A <span class='emph'>body-centered</span> view looks at how the actions that we perform with a system contribute to task transparency.</p>
+      </div>
+      <div class='figure'>
+        <img src='fig3.png' width='100%'/>
+        <div class='caption'>
+          <span class='caption-title'>Figure 3</span>
+          A paper sketch, physical mock-up, and final prototype, showing how the interface of SnuzieQ, an alarm clock, evolved through prototyping.
+        </div>
       </div>
     </div>
   </div>
@@ -370,55 +387,57 @@ important implications for designing interactive systems.
       Bill Buxton [8]
     </div>
   </div>
-  <div class='section'>
-    <div class='text'>
-      One of the most powerful human capabilities relevant to designers is the intimate incorporation of an artifact into bodily practice to the point where people perceive that artifact as an extension of themselves; they act <span class='emph'>through</span> it rather than <span class='emph'>on</span> it [16, 45, 56]. For example, experienced puppeteers can see through the eyes of their puppet and feel the ground through the puppet’s feet [75]. But what kinds of extensions are these interface artifacts? How do they enable or hinder thought and action? This section provides an account of the body’s ability for skillful performance. While much of the recent TUI literature has focused on “walk up and use” scenarios [28, 74] which require a low use threshold, this section describes how designing for skilled bodies can yield interfaces for expert performance. We describe the complexity and nuance of interaction that tangible artifacts can offer to bodies, especially to hands, to illustrate the benefits of rich physicality for skillful performance. Physical interfaces with dedicated (<span class='italic'>i.e.</span>, spatially multiplexed) controls and dedicated actions can leverage this skill to improve interaction speed and reliability [20].
-    </div>
-  </div>
-  <div class='section'>
-    <h3>Action-centered skills</h3>
-    <div class='text'>
-      <p>The tacit knowledge that many physical situations afford plays an important role in expert behavior. We draw attention to the importance of tacit knowledge because computerization can, often accidentally, inhibit it. For example, Zuboff’s studies of paper plants found operators distrustful of recent computer mediation that interpreted plant conditions for them. Prior to this mediated experience, one plant operator could judge paper condition by his arm hair sensitivity to electricity in the atmosphere around a dry roller machine; another could judge pulp roll moisture content through a slap of the hand on the roll [79]. While enclosed control rooms provided physical protection from the fumes of the plant floor, the room full of computer monitors left plant operators at a loss for the rich sensory information they used to gather with their bodies. Physical tacit knowledge is an important part of professional skill.</p>
-      <p>In interaction design, calm technologies [73] like Jeremijenko’s Live Wire, which manifests the flow of Ethernet traffic through the twitch-ing of a cable suspended from a ceiling, explicitly take on the task of producing physical cues that can be tacitly understood. The Live Wire is designed for visual  tacit  knowledge; the next section explores manual tacit knowledge.</p>
-    </div>
-  </div>
-  <div class='section'>
-    <h3>Hands</h3>
-    <div class='text'>
-      <p>A natural place to start is with our hands, as they are simultaneously a means for complex expression and sensation: they allow for complicated movement but their skin also has the highest tactile acuity of our extremities. Significantly, the action and perception potentials of the hand are linked—most prehensile (grasping) actions use the hands as bidirectional modalities [7], exerting force and sensing pressure to adjust that force simultaneously. Active touch (see Figure 4) —where one manipulates the object they are investigating to control touch stimulation — is superior to passive touch in detecting shape and identity of objects [21]. In addition, many of the complex motions that we perform are bi-manual and asymmetric. Entire professions, such as surgeons, sculptors, jewelers, musicians and puppeteers rely almost exclusively on their hands as the principle organ of expression, yet such capabilities are seldom exploited in computer systems [75] (see Figure 5). Would you agree to have a doctor performing tele-surgery on you using only a mouse and keyboard?</p>
-      <p>Offering bimanual continuous input to computer systems allows users to speed up task performance, either through simultaneous action, or through maximizing efficiency of hand motion by distribution actions between two hands [9]. Tangible tokens such as Bricks [20] afford bimanual strategies without requiring them. Similarly, Brooks has developed combined haptic and visual interfaces that improve our understanding of spatial structures and forces for scientific visualization [5].</p>
-    </div>
-  </div>
-  <div class='section'>
-    <div class='figure'>
-      <!-- Hands -->
-      <img src='fig4.png' width='65%'/>
-      <div class='caption'>
-        <span class='caption-title'>Figure 4</span>
-        Gibson’s active touch shapes [21, p. 124].
+  <div class='chapter-contents'>
+    <div class='section'>
+      <div class='text'>
+        One of the most powerful human capabilities relevant to designers is the intimate incorporation of an artifact into bodily practice to the point where people perceive that artifact as an extension of themselves; they act <span class='emph'>through</span> it rather than <span class='emph'>on</span> it [16, 45, 56]. For example, experienced puppeteers can see through the eyes of their puppet and feel the ground through the puppet’s feet [75]. But what kinds of extensions are these interface artifacts? How do they enable or hinder thought and action? This section provides an account of the body’s ability for skillful performance. While much of the recent TUI literature has focused on “walk up and use” scenarios [28, 74] which require a low use threshold, this section describes how designing for skilled bodies can yield interfaces for expert performance. We describe the complexity and nuance of interaction that tangible artifacts can offer to bodies, especially to hands, to illustrate the benefits of rich physicality for skillful performance. Physical interfaces with dedicated (<span class='italic'>i.e.</span>, spatially multiplexed) controls and dedicated actions can leverage this skill to improve interaction speed and reliability [20].
       </div>
     </div>
-    <div class='figure'>
-      <!-- Hands -->
-      <img src='fig5.png' width='65%'/>
-      <div class='caption'>
-        <span class='caption-title'>Figure 5</span>
-        The GUI’s mental model of a user [30].
+    <div class='section'>
+      <h3>Action-centered skills</h3>
+      <div class='text'>
+        <p>The tacit knowledge that many physical situations afford plays an important role in expert behavior. We draw attention to the importance of tacit knowledge because computerization can, often accidentally, inhibit it. For example, Zuboff’s studies of paper plants found operators distrustful of recent computer mediation that interpreted plant conditions for them. Prior to this mediated experience, one plant operator could judge paper condition by his arm hair sensitivity to electricity in the atmosphere around a dry roller machine; another could judge pulp roll moisture content through a slap of the hand on the roll [79]. While enclosed control rooms provided physical protection from the fumes of the plant floor, the room full of computer monitors left plant operators at a loss for the rich sensory information they used to gather with their bodies. Physical tacit knowledge is an important part of professional skill.</p>
+        <p>In interaction design, calm technologies [73] like Jeremijenko’s Live Wire, which manifests the flow of Ethernet traffic through the twitch-ing of a cable suspended from a ceiling, explicitly take on the task of producing physical cues that can be tacitly understood. The Live Wire is designed for visual  tacit  knowledge; the next section explores manual tacit knowledge.</p>
       </div>
     </div>
-  </div>
-  <div class='section'>
-    <h3>Motor Memory</h3>
-    <div class='text'>
-      <p>We are able to sense, store and recall our own muscular effort, body position and movement to build skill. It is this motor, or kinesthetic, memory [61] that is involved in <span class='emph'>knowing how</span> to ride a bicycle, <span class='emph'>how</span> to swim, <span class='emph'>how</span> to improvise on the piano [67]. It is not available to introspection, but is reliable and robust. Traditional GUI interfaces employ the same bodily actions for a wide variety of tasks — this universality is both a strength and a weakness. It allows for control of any number of applications; however, for any given application, kinesthetic memory can only be lever-aged to a limited extent since the underlying actions are the same across applications.</p>
-      <p>Assigning dedicated actions to different functions of a user interface can take better advantage of kinesthetic memory. As Djajadiningrat <span class='italic'>et al.</span> put it: “differentiation [in appearance and method of interaction] provides the ‘hooks’ for our perceptual-motor system to get a grip on a system’s functionality and to guide the user in his actions” [14]. Consistently dedicating physical movement to interface functions affords kinesthetic learning and memorization over prolonged use. Physical feedback can further help to distinguish commands kinesthetically.</p>
+    <div class='section'>
+      <h3>Hands</h3>
+      <div class='text'>
+        <p>A natural place to start is with our hands, as they are simultaneously a means for complex expression and sensation: they allow for complicated movement but their skin also has the highest tactile acuity of our extremities. Significantly, the action and perception potentials of the hand are linked—most prehensile (grasping) actions use the hands as bidirectional modalities [7], exerting force and sensing pressure to adjust that force simultaneously. Active touch (see Figure 4) —where one manipulates the object they are investigating to control touch stimulation — is superior to passive touch in detecting shape and identity of objects [21]. In addition, many of the complex motions that we perform are bi-manual and asymmetric. Entire professions, such as surgeons, sculptors, jewelers, musicians and puppeteers rely almost exclusively on their hands as the principle organ of expression, yet such capabilities are seldom exploited in computer systems [75] (see Figure 5). Would you agree to have a doctor performing tele-surgery on you using only a mouse and keyboard?</p>
+        <p>Offering bimanual continuous input to computer systems allows users to speed up task performance, either through simultaneous action, or through maximizing efficiency of hand motion by distribution actions between two hands [9]. Tangible tokens such as Bricks [20] afford bimanual strategies without requiring them. Similarly, Brooks has developed combined haptic and visual interfaces that improve our understanding of spatial structures and forces for scientific visualization [5].</p>
+      </div>
     </div>
-  </div>
-  <div class='section'>
-    <h3>Reflective reasoning is too slow</h3>
-    <div class='text'>
-      <p>Beyond reliability and robustness of kinesthetic recall, speed of execution also favors bodily skill for a class of interactive systems that require tight integration of a human performer “in the loop.” Many daily actions such as driving a car or motorcycle, operating power tools, or engaging in athletic activities require complex yet rapid bodily responses for which planning through explicit cognition is simply too slow. These actions are learned skillful behavior, not reflexes, as they are voluntary and non-uniform in response. Norman termed this class of knowledge <span class='emph'>experiential cognition</span> as opposed to <span class='emph'>reflective cognition</span> [51], which is more flexible but requires more time.</p>
-      <p>Tangible interfaces that engage the body can leverage body-centric experiential cognition. To date, computer game controllers have been the most commercially successful example of such interfaces. Players of flight simulators increase their “grip” on the simulation using two -handed joystick plus throttle controllers; driving simulator players use foot pedals and table mounted wheels with force feedback to improve their vehicle control. The success of games and game controllers suggests that rich physical input devices may provide benefit in other domains as well.</p>
+    <div class='section'>
+      <div class='figure'>
+        <!-- Hands -->
+        <img src='fig4.png' width='65%'/>
+        <div class='caption'>
+          <span class='caption-title'>Figure 4</span>
+          Gibson’s active touch shapes [21, p. 124].
+        </div>
+      </div>
+      <div class='figure'>
+        <!-- Hands -->
+        <img src='fig5.png' width='65%'/>
+        <div class='caption'>
+          <span class='caption-title'>Figure 5</span>
+          The GUI’s mental model of a user [30].
+        </div>
+      </div>
+    </div>
+    <div class='section'>
+      <h3>Motor Memory</h3>
+      <div class='text'>
+        <p>We are able to sense, store and recall our own muscular effort, body position and movement to build skill. It is this motor, or kinesthetic, memory [61] that is involved in <span class='emph'>knowing how</span> to ride a bicycle, <span class='emph'>how</span> to swim, <span class='emph'>how</span> to improvise on the piano [67]. It is not available to introspection, but is reliable and robust. Traditional GUI interfaces employ the same bodily actions for a wide variety of tasks — this universality is both a strength and a weakness. It allows for control of any number of applications; however, for any given application, kinesthetic memory can only be lever-aged to a limited extent since the underlying actions are the same across applications.</p>
+        <p>Assigning dedicated actions to different functions of a user interface can take better advantage of kinesthetic memory. As Djajadiningrat <span class='italic'>et al.</span> put it: “differentiation [in appearance and method of interaction] provides the ‘hooks’ for our perceptual-motor system to get a grip on a system’s functionality and to guide the user in his actions” [14]. Consistently dedicating physical movement to interface functions affords kinesthetic learning and memorization over prolonged use. Physical feedback can further help to distinguish commands kinesthetically.</p>
+      </div>
+    </div>
+    <div class='section'>
+      <h3>Reflective reasoning is too slow</h3>
+      <div class='text'>
+        <p>Beyond reliability and robustness of kinesthetic recall, speed of execution also favors bodily skill for a class of interactive systems that require tight integration of a human performer “in the loop.” Many daily actions such as driving a car or motorcycle, operating power tools, or engaging in athletic activities require complex yet rapid bodily responses for which planning through explicit cognition is simply too slow. These actions are learned skillful behavior, not reflexes, as they are voluntary and non-uniform in response. Norman termed this class of knowledge <span class='emph'>experiential cognition</span> as opposed to <span class='emph'>reflective cognition</span> [51], which is more flexible but requires more time.</p>
+        <p>Tangible interfaces that engage the body can leverage body-centric experiential cognition. To date, computer game controllers have been the most commercially successful example of such interfaces. Players of flight simulators increase their “grip” on the simulation using two -handed joystick plus throttle controllers; driving simulator players use foot pedals and table mounted wheels with force feedback to improve their vehicle control. The success of games and game controllers suggests that rich physical input devices may provide benefit in other domains as well.</p>
+      </div>
     </div>
   </div>
 </div>
@@ -433,53 +452,55 @@ important implications for designing interactive systems.
       Abigail Sellen and Richard Harper [62]
     </div>
   </div>
-  <div class='section'>
-    <div class='text'>
-      We have discussed how increasing the richness of human performance benefits individual users; in this section, we examine how practices that are physically distinct support collaboration and coordination. The primary concern of this section is the extent to which the activities of a practice are made <span class='emph'>visible</span> to colleagues and onlookers through the performance of the activity.
-    </div>
-  </div>
-  <div class='section'>
-    <h3>Situated Learning</h3>
-    <div class='text'>
-      <p>How does one learns a craft or a profession? One method, as described earlier, is learning by doing. Another important method is learning by participating in a community of practice, such as the way that many trade practitioners learn (<span class='italic'>e.g.</span>, midwives, tailors, quartermasters, and butchers) [40]. We argue that an important, and rarely considered, aspect of interaction design is the way in which the interface enables this participation.</p>
-      <p>Whalen and Vinkhuyzen’s study of a call center for a copier company illustrates how workspaces can successfully support peripheral participation. At this call center, the most reliable phone operator was a veteran of eight years, but the second most reliable was a newcomer. Why? The new-comer sat across from the veteran. “…she could hear the veteran taking calls, asking questions and giving advice. And she began to do the same. She had also noticed that he had acquired a variety of pamphlets and manuals, so she began to build up her own stock” [6, p.132].</p>
-      <p>As an example of how the invisibility of work practice that the GUI has brought about inhibits peripheral participation, the first author was in a laundromat, working on his laptop. A child sat next to him while he was working, and looked at him, watching him work. After a few minutes, the child pulled from his backpack a game device with a similar clamshell form factor. The child watched to see what the author was doing, and then proceeded to copy those motions on the gaming device. With the graphical interface, there is no mechanism to be aware of the practices of experts; it all looks the same.</p>
-      <p>Figure 6 shows the Stanford Product Design loft — Barbie dolls, umbrellas, new ideas, old ideas, good ideas, and bad. These artifacts invite and ground discussion about activities in the space. Collocated, cluttered studios are hallmarks of art and design education. The studio model of education employs work practice transparency as a pedagogical technique, affording peer learning, discussion, and “constant critique of work in progress” [46]. This “technology” was introduced with the founding of the École des beaux-arts in Paris in 1819, and has endured for nearly 200 years.</p>
-    </div>
-  </div>
-  <div class='section'>
-    <div class='figure'>
-      <img src='fig6.png' width='100%'/>
-      <div class='caption'>
-        <span class='caption-title'>Figure 6</span>
-        The Stanford Product Design loft studios.
+  <div class='chapter-contents'>
+    <div class='section'>
+      <div class='text'>
+        We have discussed how increasing the richness of human performance benefits individual users; in this section, we examine how practices that are physically distinct support collaboration and coordination. The primary concern of this section is the extent to which the activities of a practice are made <span class='emph'>visible</span> to colleagues and onlookers through the performance of the activity.
       </div>
     </div>
-    <div class='figure'>
-      <img src='fig7.png' width='100%'/>
-      <div class='caption'>
-        <span class='caption-title'>Figure 7</span>
-        Butcher paper lines the wall of the Stanford d.school meeting room.
+    <div class='section'>
+      <h3>Situated Learning</h3>
+      <div class='text'>
+        <p>How does one learns a craft or a profession? One method, as described earlier, is learning by doing. Another important method is learning by participating in a community of practice, such as the way that many trade practitioners learn (<span class='italic'>e.g.</span>, midwives, tailors, quartermasters, and butchers) [40]. We argue that an important, and rarely considered, aspect of interaction design is the way in which the interface enables this participation.</p>
+        <p>Whalen and Vinkhuyzen’s study of a call center for a copier company illustrates how workspaces can successfully support peripheral participation. At this call center, the most reliable phone operator was a veteran of eight years, but the second most reliable was a newcomer. Why? The new-comer sat across from the veteran. “…she could hear the veteran taking calls, asking questions and giving advice. And she began to do the same. She had also noticed that he had acquired a variety of pamphlets and manuals, so she began to build up her own stock” [6, p.132].</p>
+        <p>As an example of how the invisibility of work practice that the GUI has brought about inhibits peripheral participation, the first author was in a laundromat, working on his laptop. A child sat next to him while he was working, and looked at him, watching him work. After a few minutes, the child pulled from his backpack a game device with a similar clamshell form factor. The child watched to see what the author was doing, and then proceeded to copy those motions on the gaming device. With the graphical interface, there is no mechanism to be aware of the practices of experts; it all looks the same.</p>
+        <p>Figure 6 shows the Stanford Product Design loft — Barbie dolls, umbrellas, new ideas, old ideas, good ideas, and bad. These artifacts invite and ground discussion about activities in the space. Collocated, cluttered studios are hallmarks of art and design education. The studio model of education employs work practice transparency as a pedagogical technique, affording peer learning, discussion, and “constant critique of work in progress” [46]. This “technology” was introduced with the founding of the École des beaux-arts in Paris in 1819, and has endured for nearly 200 years.</p>
       </div>
     </div>
-  </div>
-  <div class='section'>
-    <h3>Visibility Facilitates Coordination</h3>
-    <div class='text'>
-      <p>In addition to supporting situated learning and peripheral participation, the production and manipulation of visible artifacts in the workplace facilitate coordination (<span class='italic'>e.g.</span>, [4, 11, 49, 62]). The visibility of a work practice manifests itself in the artifacts that the practice creates (see Figure 7). We see this in Heath and Luff’s account of paper medical records [25]. Paper medical records provide a platform for asynchronous coordination between hospital staff. They help organize work as staff leverage the many consequential properties of their colleagues’ handling of the records to gain richer insight into the history of the patient’s interaction with hospital — pencil means a note is tentative, worn means that a record has seen a lot of use, <span class='italic'>etc.</span></p>
-      <p>The visibility provided through collocated practice with task-specific artifacts is also successful in supporting synchronous collaboration, and can be especially useful in mission-critical systems. Mackay’s air traffic control studies [41] focused on the role of the paper flight strips that provide a hand-scale physical representation of air-planes. Her primary finding was that <span class='emph'>controllers coordinate the management of air traffic by coordinating the management of flight strips</span>. As we are much less likely to ignore a colleague who presents a request by walking into our office than by sending an email (partially because “receipt” of the request is much more visible), Mackay found the physical act of handing a strip to have important properties not easily replicated in electronic systems. <span class='emph'>The social life of physical artifacts and their visibility facilitate distributing the cognitive work of groups</span> (<span class='italic'>e.g.</span>, [26, 29]).</p>
+    <div class='section'>
+      <div class='figure'>
+        <img src='fig6.png' width='100%'/>
+        <div class='caption'>
+          <span class='caption-title'>Figure 6</span>
+          The Stanford Product Design loft studios.
+        </div>
+      </div>
+      <div class='figure'>
+        <img src='fig7.png' width='100%'/>
+        <div class='caption'>
+          <span class='caption-title'>Figure 7</span>
+          Butcher paper lines the wall of the Stanford d.school meeting room.
+        </div>
+      </div>
     </div>
-  </div>
-  <div class='section'>
-    <h3>That’s what performance is about</h3>
-    <div class='text'>
-      <p>The value we place in visibility of creative production is exemplified by live musical performance. While the music itself is more intricate and polished in studio recordings, audiences still pack concert venues because live performances permit listeners to witness the act of performance as well as co-produce the event (musician and audience respond to each other through mutual feedback). Think of the critical outrage when it became known that Milli Vanilli lip-synced. With the spread of software synthesis and sequencing, laptop performances of electronic music became common, where a lone musician sits behind a laptop, face hidden from the crowd by the LCD screen. Because performers sat motionless behind their computers (except for some mouse-clicking) the act of performance, although still taking place, was rendered invisible, and as a result audiences became both disengaged and suspicious — “How do I know the performer is not just checking his email?” As an antidote, Audiopad [53] reestablishes visibility of performance by creating a synthesis interface comprised of a projected tabletop display with several control pucks.</p>
+    <div class='section'>
+      <h3>Visibility Facilitates Coordination</h3>
+      <div class='text'>
+        <p>In addition to supporting situated learning and peripheral participation, the production and manipulation of visible artifacts in the workplace facilitate coordination (<span class='italic'>e.g.</span>, [4, 11, 49, 62]). The visibility of a work practice manifests itself in the artifacts that the practice creates (see Figure 7). We see this in Heath and Luff’s account of paper medical records [25]. Paper medical records provide a platform for asynchronous coordination between hospital staff. They help organize work as staff leverage the many consequential properties of their colleagues’ handling of the records to gain richer insight into the history of the patient’s interaction with hospital — pencil means a note is tentative, worn means that a record has seen a lot of use, <span class='italic'>etc.</span></p>
+        <p>The visibility provided through collocated practice with task-specific artifacts is also successful in supporting synchronous collaboration, and can be especially useful in mission-critical systems. Mackay’s air traffic control studies [41] focused on the role of the paper flight strips that provide a hand-scale physical representation of air-planes. Her primary finding was that <span class='emph'>controllers coordinate the management of air traffic by coordinating the management of flight strips</span>. As we are much less likely to ignore a colleague who presents a request by walking into our office than by sending an email (partially because “receipt” of the request is much more visible), Mackay found the physical act of handing a strip to have important properties not easily replicated in electronic systems. <span class='emph'>The social life of physical artifacts and their visibility facilitate distributing the cognitive work of groups</span> (<span class='italic'>e.g.</span>, [26, 29]).</p>
+      </div>
     </div>
-  </div>
-  <div class='section'>
-    <h3>Verified Voting</h3>
-    <div class='text'>
-      <p>One of the most surprising proponents of tangibility is the Verified Voting Foundation. Their assertion is that the only acceptable voting method is one that leaves a paper record. Their reason is that electronic voting machines “pose an unacceptable risk that errors or deliberate election-rigging will go undetected” [1]. The argument is <span class='emph'>not</span> that touch-screen voting is less efficient, but that it is more difficult for one to tell when an electronic vote has been manipulated. Because <span class='emph'>tampering is made visible</span> with physical systems, the Verified Voting Foundation suggests that they are more appropriate for catching attempted election fraud.</p>
+    <div class='section'>
+      <h3>That’s what performance is about</h3>
+      <div class='text'>
+        <p>The value we place in visibility of creative production is exemplified by live musical performance. While the music itself is more intricate and polished in studio recordings, audiences still pack concert venues because live performances permit listeners to witness the act of performance as well as co-produce the event (musician and audience respond to each other through mutual feedback). Think of the critical outrage when it became known that Milli Vanilli lip-synced. With the spread of software synthesis and sequencing, laptop performances of electronic music became common, where a lone musician sits behind a laptop, face hidden from the crowd by the LCD screen. Because performers sat motionless behind their computers (except for some mouse-clicking) the act of performance, although still taking place, was rendered invisible, and as a result audiences became both disengaged and suspicious — “How do I know the performer is not just checking his email?” As an antidote, Audiopad [53] reestablishes visibility of performance by creating a synthesis interface comprised of a projected tabletop display with several control pucks.</p>
+      </div>
+    </div>
+    <div class='section'>
+      <h3>Verified Voting</h3>
+      <div class='text'>
+        <p>One of the most surprising proponents of tangibility is the Verified Voting Foundation. Their assertion is that the only acceptable voting method is one that leaves a paper record. Their reason is that electronic voting machines “pose an unacceptable risk that errors or deliberate election-rigging will go undetected” [1]. The argument is <span class='emph'>not</span> that touch-screen voting is less efficient, but that it is more difficult for one to tell when an electronic vote has been manipulated. Because <span class='emph'>tampering is made visible</span> with physical systems, the Verified Voting Foundation suggests that they are more appropriate for catching attempted election fraud.</p>
+      </div>
     </div>
   </div>
 </div>
@@ -494,33 +515,35 @@ important implications for designing interactive systems.
       Hubert Dreyfus [18]
     </div>
   </div>
-  <div class='section'>
-    <h3>Physical Action is Characterized by Risk</h3>
-    <div class='text'>
-      <p>One’s unmediated experience of acting in the physical world is characterized by uncertainty and an awareness of corporeal vulnerability. Dreyfus [17] argues that this leads to a constant preparedness for danger and surprises, and that this readiness shapes one’s experience and interactions in the world. <span class='emph'>Individually</span>, bodies can suffer harm if one chooses the wrong course of action (<span class='italic'>e.g.</span>, when using power tools), as the result of actions in the world cannot be un-done. Choosing an action requires <span class='emph'>commitment</span>; carrying it out is an expression of this commitment. In <span class='emph'>social interactions</span>, risk may not necessarily entail physical harm, but can also come from the imperative to act in the presence of others. As Watzlawick <span class='italic'>et al.</span> note, “we cannot not communicate” — the absence of communicative effort is itself a message that is interpreted by one’s peers [71]. One cannot undo a social faux pas in face to face interactions; technology mitigates against this risk: one can delete sentences before sending them to friends over IM or email.</p>
-      <p>Risk is having to choose an action which cannot be undone while the consequences of the action are not fully knowable ahead of time.</p>
-      <p>Technologies of telepresence and digital design tools often strive to minimize or eliminate risk, <span class='italic'>e.g.</span>, flight simulators. Digital artifacts often do not exhibit commitment to actions; in fact, being able to index at random into the past of our creation through undo/redo and versioning may be the single most important characteristic that separates digital from physical interactions. Despite the obvious benefits of simulation and virtualization, retaining elements of risk in practice can be beneficial. With the challenges of risk come opportunities for more trusting, committed, responsible, and focused interactions in both social and individual activities.</p>
+  <div class='chapter-contents'>
+    <div class='section'>
+      <h3>Physical Action is Characterized by Risk</h3>
+      <div class='text'>
+        <p>One’s unmediated experience of acting in the physical world is characterized by uncertainty and an awareness of corporeal vulnerability. Dreyfus [17] argues that this leads to a constant preparedness for danger and surprises, and that this readiness shapes one’s experience and interactions in the world. <span class='emph'>Individually</span>, bodies can suffer harm if one chooses the wrong course of action (<span class='italic'>e.g.</span>, when using power tools), as the result of actions in the world cannot be un-done. Choosing an action requires <span class='emph'>commitment</span>; carrying it out is an expression of this commitment. In <span class='emph'>social interactions</span>, risk may not necessarily entail physical harm, but can also come from the imperative to act in the presence of others. As Watzlawick <span class='italic'>et al.</span> note, “we cannot not communicate” — the absence of communicative effort is itself a message that is interpreted by one’s peers [71]. One cannot undo a social faux pas in face to face interactions; technology mitigates against this risk: one can delete sentences before sending them to friends over IM or email.</p>
+        <p>Risk is having to choose an action which cannot be undone while the consequences of the action are not fully knowable ahead of time.</p>
+        <p>Technologies of telepresence and digital design tools often strive to minimize or eliminate risk, <span class='italic'>e.g.</span>, flight simulators. Digital artifacts often do not exhibit commitment to actions; in fact, being able to index at random into the past of our creation through undo/redo and versioning may be the single most important characteristic that separates digital from physical interactions. Despite the obvious benefits of simulation and virtualization, retaining elements of risk in practice can be beneficial. With the challenges of risk come opportunities for more trusting, committed, responsible, and focused interactions in both social and individual activities.</p>
+      </div>
     </div>
-  </div>
-  <div class='section'>
-    <h3>Trust and Commitment</h3>
-    <div class='text'>
-      <p>Because distance collaboration mitigates risk, there is less of an opportunity for building trust. “Even strong ties maintained at a distance through electronic communication are likely to be… diminished in strength compared with strong ties supported by physical proximity” [37]. Examples of problems with distant, electronic communication include flaming as observed on the Internet [65], which is attributed to the lack of social context cues. One could alternatively attribute these findings to decreased risk in computer-mediated communication as compared to face-to-face communication. On the other hand, it is important to remember that sometimes the elimination of the types of risks associated with face-to -face interaction can also lead to more open conversation and close emotional ties as described in online communities (<span class='italic'>e.g.</span>,[13, 77]).</p>
-      <p>Though risk can make people feel more anxious about interactions with others, it can also engender the kind of trust necessary for successful distance collaborations. In reviewing the literature around both collocated and distance interactions, Olson & Olson [52] concluded that <span class='emph'>distance matters</span> in deciding the outcome of collaborative work. Fortunately, problems that arise from distance collaborations may be mitigated by initial face-to-face contact [57].</p>
-      <p>Situations that involve more risk can also stimulate more committed involvement by participants of the interaction. In the context of writing, “Because the computer doesn’t permanently record what you write, you feel less committed when you type on it” [3, p. 155]. Likewise, painting in watercolor requires more commitment to each stroke than working in Adobe Illustrator; working with people face to face requires more commitment than in distance collaborations.</p>
+    <div class='section'>
+      <h3>Trust and Commitment</h3>
+      <div class='text'>
+        <p>Because distance collaboration mitigates risk, there is less of an opportunity for building trust. “Even strong ties maintained at a distance through electronic communication are likely to be… diminished in strength compared with strong ties supported by physical proximity” [37]. Examples of problems with distant, electronic communication include flaming as observed on the Internet [65], which is attributed to the lack of social context cues. One could alternatively attribute these findings to decreased risk in computer-mediated communication as compared to face-to-face communication. On the other hand, it is important to remember that sometimes the elimination of the types of risks associated with face-to -face interaction can also lead to more open conversation and close emotional ties as described in online communities (<span class='italic'>e.g.</span>,[13, 77]).</p>
+        <p>Though risk can make people feel more anxious about interactions with others, it can also engender the kind of trust necessary for successful distance collaborations. In reviewing the literature around both collocated and distance interactions, Olson & Olson [52] concluded that <span class='emph'>distance matters</span> in deciding the outcome of collaborative work. Fortunately, problems that arise from distance collaborations may be mitigated by initial face-to-face contact [57].</p>
+        <p>Situations that involve more risk can also stimulate more committed involvement by participants of the interaction. In the context of writing, “Because the computer doesn’t permanently record what you write, you feel less committed when you type on it” [3, p. 155]. Likewise, painting in watercolor requires more commitment to each stroke than working in Adobe Illustrator; working with people face to face requires more commitment than in distance collaborations.</p>
+      </div>
     </div>
-  </div>
-  <div class='section'>
-    <h3>Personal responsibility</h3>
-    <div class='text'>
-      <p>Making the consequences of decisions more directly visible to people alters the outcome of the decision-making process. There are situations where the decision-makers should not be subject to the overwhelming repercussions of their decisions, <span class='italic'>e.g.</span>, natural disaster response planning. How-ever, other scenarios suggest including the explicit aware-ness of risk into the decision-making scene. In Milgram’s studies on obedience to authority [47], physical proximity of the teacher to the learner significantly decreased levels of obedience to orders to inflict more pain upon the learner. Making the implications of one’s actions more visible (making risk more salient) increases one’s sense of personal responsibility for decisions, helping to overcome the human inclination for obedience to authority.</p>
+    <div class='section'>
+      <h3>Personal responsibility</h3>
+      <div class='text'>
+        <p>Making the consequences of decisions more directly visible to people alters the outcome of the decision-making process. There are situations where the decision-makers should not be subject to the overwhelming repercussions of their decisions, <span class='italic'>e.g.</span>, natural disaster response planning. How-ever, other scenarios suggest including the explicit aware-ness of risk into the decision-making scene. In Milgram’s studies on obedience to authority [47], physical proximity of the teacher to the learner significantly decreased levels of obedience to orders to inflict more pain upon the learner. Making the implications of one’s actions more visible (making risk more salient) increases one’s sense of personal responsibility for decisions, helping to overcome the human inclination for obedience to authority.</p>
+      </div>
     </div>
-  </div>
-  <div class='section'>
-    <h3>Attention</h3>
-    <div class='text'>
-      <p>Situations of higher risk cause people to feel more emotion-ally negative and, therefore, more focused, paying closer attention to detail, while situations of low risk allow people to feel more emotionally positive, relaxed, curious, and creative [50, p. 26]. Instilling a higher sense of risk in the design of the interactive space helps people to focus. However, there are other times when divergent thinking, <span class='italic'>e.g.</span>, brainstorming, is more appropriate. One may better design for embodied interaction by designing the experience of risk in interactive systems to alter the emotional experience of user(s). An important caution with designing for risk is to avoid eliciting the combination of negative emotion with high arousal because this leads to closed-minded and often dangerous behavior, <span class='italic'>e.g.</span>, reflexively pushing on an emergency exit door that only opens inward [50, p. 28].</p>
-      <p>For a clearly corporeal example of designing with risk in mind, consider the Painstation [44]. This art project in-creases the amount of risk involved in the game of Pong through a shock, heat, and whip plate that each player places one hand upon. Not surprisingly, players stay more focused. While we do not advocate that shock plates be included with the next version of office productivity suites, this artwork elucidates Dreyfus’s point that risk, attention, and engagement are intertwined.</p>
+    <div class='section'>
+      <h3>Attention</h3>
+      <div class='text'>
+        <p>Situations of higher risk cause people to feel more emotion-ally negative and, therefore, more focused, paying closer attention to detail, while situations of low risk allow people to feel more emotionally positive, relaxed, curious, and creative [50, p. 26]. Instilling a higher sense of risk in the design of the interactive space helps people to focus. However, there are other times when divergent thinking, <span class='italic'>e.g.</span>, brainstorming, is more appropriate. One may better design for embodied interaction by designing the experience of risk in interactive systems to alter the emotional experience of user(s). An important caution with designing for risk is to avoid eliciting the combination of negative emotion with high arousal because this leads to closed-minded and often dangerous behavior, <span class='italic'>e.g.</span>, reflexively pushing on an emergency exit door that only opens inward [50, p. 28].</p>
+        <p>For a clearly corporeal example of designing with risk in mind, consider the Painstation [44]. This art project in-creases the amount of risk involved in the game of Pong through a shock, heat, and whip plate that each player places one hand upon. Not surprisingly, players stay more focused. While we do not advocate that shock plates be included with the next version of office productivity suites, this artwork elucidates Dreyfus’s point that risk, attention, and engagement are intertwined.</p>
+      </div>
     </div>
   </div>
 </div>
@@ -535,43 +558,45 @@ important implications for designing interactive systems.
       Christian Heath and Paul Luff [25]
     </div>
   </div>
-  <div class='section'>
-    <div class='text'>
-      <p>It may seem a platitude, but it is worth repeating that, “if technology is to provide an advantage, the correspondence to the real world must break down at some point” [23]. Interaction design is simultaneously drawn in two directions. First, the promise of new technology is that it pro-vides previously unavailable functionality. Second, in designing almost any new technology, one is drawing on existing human understanding of the world. In the creation of the new, much technology formalizes some aspects of a work practice. System designers have often “paved paradise and put up a parking lot” — the goals were noble, but important invisible aspects of work practice were denied by the new technology (<span class='italic'>cf.</span> [66]).</p>
-      <p>This section argues that interfaces that <span class='emph'>are the real world</span> can obviate many of the difficulties of attempting to <span class='emph'>model all of the salient characteristics of a work process as practiced</span>. This argument builds on Weiser’s exhortation to design for “embodied virtuality” rather than virtual reality [72]. Designing interactions that <span class='emph'>are the real world</span> instead of ones that simulate or replicate it hedges against simulacra that have neglected an important practice.</p>
-      <p>A system that respects the primacy of physical practice is Final Scratch, which provides access to digital music through specially encoded vinyl records (see Figure 8). These vinyl records contain a time code instead of an audio signal. The system interposes a soundcard into the signal path between turntable and mixer to pick up the time code, link it to playback of digital music files on a laptop computer, and return that audio signal to the inputs of the mixing console. FinalScratch affords continuity of practice — skills acquired over years of practice still apply since the physical interface has not changed. DJs regard it as superior to competing digital control products (such as CD players with jog dials) because digital controls do not provide the sensory richness or the nuance of manipulation offered by the “real thing.”</p>
-      <p>Books with Voices [36] augments paper transcripts of oral histories with barcodes printed alongside the text. These can be scanned by a PDA to access original audio recordings. In retaining the printed paper page as the primary artifact around which interaction is structured, the system embraces existing reading practices, grafting digital media onto them.</p>
-      <p>The project of technology is the creation of increasingly malleable materials, and computation is perhaps the most malleable created so far. Given the techno-utopian ideology of computer science, it can seem heretical to suggest that one should undertake a project other than replacing the physical world. Clearly, the digital world can provide advantages. To temper that, we argue that <span class='emph'>because there is so much benefit in the physical world</span>, we should take great care before unreflectively replacing it. More precisely, from a design perspective, solutions that carefully integrate the physical and digital worlds — leaving the physical world alone to the extent possible — are likely to be more successful by admitting the improvisations of practice that the physical world offers.</p>
-    </div>
-  </div>
-  <div class='section'>
-    <div class='figure'>
-      <img src='fig8.png' width='100%'/>
-      <div class='caption'>
-        <span class='caption-title'>Figure 8</span>
-        Final Scratch: encoded vinyl for digital music.
+  <div class='chapter-contents'>
+    <div class='section'>
+      <div class='text'>
+        <p>It may seem a platitude, but it is worth repeating that, “if technology is to provide an advantage, the correspondence to the real world must break down at some point” [23]. Interaction design is simultaneously drawn in two directions. First, the promise of new technology is that it pro-vides previously unavailable functionality. Second, in designing almost any new technology, one is drawing on existing human understanding of the world. In the creation of the new, much technology formalizes some aspects of a work practice. System designers have often “paved paradise and put up a parking lot” — the goals were noble, but important invisible aspects of work practice were denied by the new technology (<span class='italic'>cf.</span> [66]).</p>
+        <p>This section argues that interfaces that <span class='emph'>are the real world</span> can obviate many of the difficulties of attempting to <span class='emph'>model all of the salient characteristics of a work process as practiced</span>. This argument builds on Weiser’s exhortation to design for “embodied virtuality” rather than virtual reality [72]. Designing interactions that <span class='emph'>are the real world</span> instead of ones that simulate or replicate it hedges against simulacra that have neglected an important practice.</p>
+        <p>A system that respects the primacy of physical practice is Final Scratch, which provides access to digital music through specially encoded vinyl records (see Figure 8). These vinyl records contain a time code instead of an audio signal. The system interposes a soundcard into the signal path between turntable and mixer to pick up the time code, link it to playback of digital music files on a laptop computer, and return that audio signal to the inputs of the mixing console. FinalScratch affords continuity of practice — skills acquired over years of practice still apply since the physical interface has not changed. DJs regard it as superior to competing digital control products (such as CD players with jog dials) because digital controls do not provide the sensory richness or the nuance of manipulation offered by the “real thing.”</p>
+        <p>Books with Voices [36] augments paper transcripts of oral histories with barcodes printed alongside the text. These can be scanned by a PDA to access original audio recordings. In retaining the printed paper page as the primary artifact around which interaction is structured, the system embraces existing reading practices, grafting digital media onto them.</p>
+        <p>The project of technology is the creation of increasingly malleable materials, and computation is perhaps the most malleable created so far. Given the techno-utopian ideology of computer science, it can seem heretical to suggest that one should undertake a project other than replacing the physical world. Clearly, the digital world can provide advantages. To temper that, we argue that <span class='emph'>because there is so much benefit in the physical world</span>, we should take great care before unreflectively replacing it. More precisely, from a design perspective, solutions that carefully integrate the physical and digital worlds — leaving the physical world alone to the extent possible — are likely to be more successful by admitting the improvisations of practice that the physical world offers.</p>
       </div>
     </div>
-  </div>
-  <div class='section'>&nbsp;</div>
-  <div class='section'>&nbsp;</div>
-  <div class='section shifted'>
-    <h3>Related Work</h3>
-    <div class='text'>
-      <p>New design considerations and design conversations emerge when our bodies are understood as more than just “Baby Bubbleheads” (<span class='italic'>i.e.</span>, the Model Human Processor [10]). We are not the first to undertake conceptual scaffold-ing in this area. We describe here two related areas of work: applying theory to HCI and generalizing the results of tangible interface research. We should also point out that there are other lenses through which one can reason about why bodies matter, such as aesthetics, which we do not cover in this paper.</p>
-      <p>Winograd and Flores introduced phenomenology — the philosophy of being-in-the-world—to the field of computer science as a caution against the then-prevalent symbolic view of cognition and intelligence [76]. Hayles traces the history of this view and how its DNA remains in current discourse and popular culture [24]. Weiser relied on Polanyi’s concept of tacit knowledge to develop his vision of ubiquitous computing [72]. More recently, Dourish suggests phenomenology and social science theory (specifically ethnomethodology, the study of the practical achievements of social actors) as constituting an appropriate uniting lens for social and tangible computing [15]. We draw from this work the focus on the human body and our experience of action, as well as the top-down approach of generating design concerns from theory. The project of this paper is distinct from this prior work in that our goal is to provide design themes, elucidated from the theoretical literature when appropriate, rather than provide an accessible entry for the HCI community into philosophy literature.</p>
-      <p>There have been several recent efforts to provide taxonomies for off-the-desktop interaction by surveying existing systems. These taxonomies have focused on characterizing the use of input and output technologies [35]; investigating the role of artifact physicality and interface metaphor [19]; conceptualizing tangibility in terms of tokens and constraints [63]; and the role of tangibility as a facilitator for collaboration [28]. This work largely represents a technology-centric view of interaction design: generalizing from systems is effective for finding commonalities, but — by definition — it is limited to describing what is already there. This paper contributes to this discussion by synthesizing theoretical results into themes that are both generative and evaluative.</p>
-      <p></p>
+    <div class='section'>
+      <div class='figure'>
+        <img src='fig8.png' width='100%'/>
+        <div class='caption'>
+          <span class='caption-title'>Figure 8</span>
+          Final Scratch: encoded vinyl for digital music.
+        </div>
+      </div>
     </div>
-  </div>
-  <div class='section shifted'>
-    <h3>Conclusions</h3>
-    <div class='text'>
-      <p>Hollan and Stornetta [27] argue that the impact of electronic media should not be measured by how well they can approximate the affordances of face-to-face interaction, but rather how they can surpass the constraints of co-presence and co-location to offer value that motivate their use even if face-to-face communication is available [27]. Similarly, we should not just strive to approach the affordances of tangibility in our interfaces and interactions, but to go beyond what mere form offers. As Dourish notes, “Tangible computing is of interest precisely because it is not purely physical. It is a physical realization of a symbolic reality” [15, p. 207]. For a combination of virtual representations and physical artifacts to be successful and truly go beyond what each individual medium can offer, we need a thorough understanding what each can offer to us first. In this paper we developed our view of the affordances of physicality and concreteness for the design of interactive systems. We believe the five themes presented in this paper will be of value both <span class='emph'>generatively</span> — helping designers come up with new solutions — and for <span class='emph'>evaluation</span> — providing a rich set of axes for analyzing the benefits of systems.</p>
+    <div class='section'>&nbsp;</div>
+    <div class='section'>&nbsp;</div>
+    <div class='section shifted'>
+      <h3>Related Work</h3>
+      <div class='text'>
+        <p>New design considerations and design conversations emerge when our bodies are understood as more than just “Baby Bubbleheads” (<span class='italic'>i.e.</span>, the Model Human Processor [10]). We are not the first to undertake conceptual scaffold-ing in this area. We describe here two related areas of work: applying theory to HCI and generalizing the results of tangible interface research. We should also point out that there are other lenses through which one can reason about why bodies matter, such as aesthetics, which we do not cover in this paper.</p>
+        <p>Winograd and Flores introduced phenomenology — the philosophy of being-in-the-world—to the field of computer science as a caution against the then-prevalent symbolic view of cognition and intelligence [76]. Hayles traces the history of this view and how its DNA remains in current discourse and popular culture [24]. Weiser relied on Polanyi’s concept of tacit knowledge to develop his vision of ubiquitous computing [72]. More recently, Dourish suggests phenomenology and social science theory (specifically ethnomethodology, the study of the practical achievements of social actors) as constituting an appropriate uniting lens for social and tangible computing [15]. We draw from this work the focus on the human body and our experience of action, as well as the top-down approach of generating design concerns from theory. The project of this paper is distinct from this prior work in that our goal is to provide design themes, elucidated from the theoretical literature when appropriate, rather than provide an accessible entry for the HCI community into philosophy literature.</p>
+        <p>There have been several recent efforts to provide taxonomies for off-the-desktop interaction by surveying existing systems. These taxonomies have focused on characterizing the use of input and output technologies [35]; investigating the role of artifact physicality and interface metaphor [19]; conceptualizing tangibility in terms of tokens and constraints [63]; and the role of tangibility as a facilitator for collaboration [28]. This work largely represents a technology-centric view of interaction design: generalizing from systems is effective for finding commonalities, but — by definition — it is limited to describing what is already there. This paper contributes to this discussion by synthesizing theoretical results into themes that are both generative and evaluative.</p>
+        <p></p>
+      </div>
     </div>
-    <h3>Acknowledgements</h3>
-    <div class='text'>
-      <p>We thank Jan Chong for introducing us to the notions of visibility and transparency; and Terry Winograd, Wendy Ju, and Erica Robles for insightful discussions about this work.</p>
+    <div class='section shifted'>
+      <h3>Conclusions</h3>
+      <div class='text'>
+        <p>Hollan and Stornetta [27] argue that the impact of electronic media should not be measured by how well they can approximate the affordances of face-to-face interaction, but rather how they can surpass the constraints of co-presence and co-location to offer value that motivate their use even if face-to-face communication is available [27]. Similarly, we should not just strive to approach the affordances of tangibility in our interfaces and interactions, but to go beyond what mere form offers. As Dourish notes, “Tangible computing is of interest precisely because it is not purely physical. It is a physical realization of a symbolic reality” [15, p. 207]. For a combination of virtual representations and physical artifacts to be successful and truly go beyond what each individual medium can offer, we need a thorough understanding what each can offer to us first. In this paper we developed our view of the affordances of physicality and concreteness for the design of interactive systems. We believe the five themes presented in this paper will be of value both <span class='emph'>generatively</span> — helping designers come up with new solutions — and for <span class='emph'>evaluation</span> — providing a rich set of axes for analyzing the benefits of systems.</p>
+      </div>
+      <h3>Acknowledgements</h3>
+      <div class='text'>
+        <p>We thank Jan Chong for introducing us to the notions of visibility and transparency; and Terry Winograd, Wendy Ju, and Erica Robles for insightful discussions about this work.</p>
+      </div>
     </div>
   </div>
 </div>
